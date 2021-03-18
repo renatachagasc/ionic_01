@@ -1,20 +1,60 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Blank
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Blank</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <div id="container">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-subtitle>smartphones</ion-card-subtitle>
+                            <ion-card-title>Moto g9</ion-card-title>
+                        </ion-card-header>
+
+                        <ion-card-content>
+
+                            <ion-button (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">Detalhe</ion-button>
+
+                            <ion-list collapse="isCollapsed">
+                                <ion-item>
+                                    <ion-label>Sistema Operacional: Android 10</ion-label>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>
+                                        Armazenamento (ROM): 128 GB²</ion-label>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>Memória RAM: 4 GB</ion-label>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>
+                                        Tamanho da tela: 6,8
+                                    </ion-label>
+                                </ion-item>
+                                <ion-item>
+                                    <ion-label>
+                                        Tamanho da bateria: 6000 mAh</ion-label>
+                                </ion-item>
+                            </ion-list>
+                        </ion-card-content>
+
+                    </ion-card>
+
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </div>
 </ion-content>
